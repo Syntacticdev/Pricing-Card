@@ -1,0 +1,91 @@
+body {
+    background: gainsboro;
+}
+
+#ch {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 15em;
+    height: 30em;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.pricing-card.free {
+    background: #fff;
+}
+
+.pricing-card.pro {
+    background-color: black;
+    color: #fff;
+}
+
+button {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.subscribe-free-btn {
+    background: black;
+    color: #fff;
+}
+               
+.subscribe-pro-btn {
+    background: #fff;
+}
+#check {
+    position: relative;
+}
+[type="checkbox"] {
+    position: relative;
+    margin-right: 10px;
+}
+
+[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+.free [type="checkbox"]::after {
+    background: #000;
+}
+
+.pro [type="checkbox"]::after {
+    background:#fff;
+}
+.free [type="checkbox"]:checked::after {
+    content: '\2713\0020';
+    text-align: center;
+    color: white;
+} 
+.pro [type="checkbox"]:checked::after {
+    content: '\2713\0020';
+    text-align: center;
+    color:#000;
+} 
+
+
